@@ -1,0 +1,97 @@
+/* ---------- *\
+	FORM
+\* ---------- */
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+	@include border-radius(4px);
+	background-color:$white;
+	border:none;
+	border:1px solid $black-two;
+	box-sizing: border-box;
+	color:$black-one;
+	display:block;
+	font-size:1rem;
+	height:3rem;
+	margin:.5rem 0;
+	padding:.5rem;
+	width:100%;
+
+	&:active,
+	&:focus {
+		color:$black;
+		border-color:$black-one;
+		outline:none;
+	}
+
+}//form elements
+
+textarea {
+	height:auto;
+}
+
+
+form {
+	.form-group {
+		margin-bottom:2rem;
+
+		label {
+			font-size:1rem;
+			font-weight:bold;
+		}//label
+
+	}//form-group
+}//form
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+		@include border-radius(4px);
+		background-color: $white;
+    border: 1px solid $black-two;
+		color:$link;
+    cursor: pointer;
+    display: inline-block;
+		font-size:1rem;
+		font-weight:bold;
+    height: 3rem;
+	  line-height: 3rem;
+    padding: 0 30px;
+    text-align: center;
+	  text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+
+	&:hover {
+		background-color: $link;
+    border: 1px solid $link;
+		color:$white;
+	}
+
+	&.secondary {
+		background-color: $link;
+    border: 1px solid $link;
+		color:$white;
+
+		&:hover {
+			background-color: $link-hover;
+			border-color:$link-hover;
+		}//hover
+
+	}//secondary
+}//buttons

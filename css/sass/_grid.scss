@@ -1,0 +1,64 @@
+/* ---------- *\
+	GRID
+\* ---------- */
+
+.container-fluid {
+	.container {
+		max-width:$screen-lg;
+		margin-left:auto;
+		margin-right:auto;
+		padding-left:1rem;
+		padding-right:1rem;
+
+		.row {
+			@extend .clearfix;
+
+			> div {
+
+				@media (min-width: $screen-sm) {
+					float:left;
+				}
+
+				&.col-25 {
+					width:100%;
+
+					@media (min-width: $screen-sm) {
+						width:25%;
+					}//break
+				}//25
+
+				&.col-50 {
+					width:100%;
+
+					@media (min-width: $screen-sm) {
+						width:50%;
+					}//break
+				}//50
+
+				&.col-75 {
+					width:100%;
+
+					@media (min-width: $screen-sm) {
+						width:75%;
+					}//break
+				}//75
+
+				&.col-33 {
+					width:100%;
+
+					@media (min-width: $screen-sm) {
+						width:33.3333%;
+					}//break
+				}//33
+
+				&.col-66 {
+					width:100%;
+
+					@media (min-width: $screen-sm) {
+						width:66.6666%;
+					}//break
+				}//33
+			}//columns
+		}//row
+	}//container
+}//container-fluid

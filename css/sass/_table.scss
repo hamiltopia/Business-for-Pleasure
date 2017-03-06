@@ -1,0 +1,21 @@
+/* ---------- *\
+	TABLE
+\* ---------- */
+table {
+	border:1px solid $black-two;
+	margin-bottom:1rem;
+	width:100%;
+
+	th,
+	td {
+		border:1px solid $black-two;
+		font-size:1rem;
+		padding:.5rem;
+		text-align:left;
+	}//th,td
+
+	th {
+		background-color:$black-three;
+		font-weight:bold;
+	}//th
+}//table

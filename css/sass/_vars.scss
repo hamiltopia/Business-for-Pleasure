@@ -1,0 +1,210 @@
+//----------
+// VARS
+//----------
+
+//----------
+// Font Smoothing
+//----------
+//
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+//@include font-smoothing(on);
+
+
+//----------
+// FONTS
+//----------
+@import "https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600|Playfair+Display:900i";
+
+html,
+body {
+  font-family: "Open Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size:100%;
+}
+
+//---------
+// MEDIA QUERIES
+//---------
+
+$screen-xs:                  480px !default;
+$screen-sm:                  768px !default;
+$screen-md:                  992px !default;
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+// @media (min-width: $screen-sm) { ... }
+// @media (min-width: $screen-md) { ... }
+// @media (min-width: $screen-lg) { ... }
+
+
+//----------
+// BORDER RADIUS
+//----------
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+// .button {
+//   @include border-radius(5px);
+// }
+
+
+
+//----------
+// OPACITY
+//----------
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+//@include opacity(0.8);
+
+
+//----------
+// CENTER ALIGN BLOCK
+//----------
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//@include center-block;
+
+
+//----------
+// COLORS
+//----------
+$black: #000;
+$black-one: lighten( $black, 20% );
+$black-two: lighten( $black, 90% );
+$black-three: lighten( $black, 97% );
+
+$white:#FFFFFF;
+
+$blue:#4183D7;
+$pink:#7C2151;
+$orange:#E77F00;
+
+$link: #4183D7;
+$link-hover: darken( $link, 20% );
+
+
+
+//----------
+// FONT SIZE
+//----------
+@mixin font-size($sizeValue: 12 ){
+  font-size: $sizeValue + px; //fallback for old browsers
+  font-size: (0.125 * $sizeValue) + rem;
+}
+// body {
+//   @include font-size(16);
+// }
+
+//----------
+// LINE HEIGHT
+//----------
+@mixin line-height($heightValue: 12 ){
+   line-height: $heightValue + px; //fallback for old browsers
+   line-height: (0.125 * $heightValue) + rem;
+}
+
+
+
+//----------
+// CLEARFIX
+//----------
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//@extend .clearfix;
+
+
+
+//----------
+// ROTATE
+//----------
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=#{-1*sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+    filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=#{-1*sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+}
+
+//@include rotate(-45deg);
+
+
+//----------
+// OPACITY
+//----------
+@mixin Opacity($value){
+  $IEValue: $value*100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
+}
+
+//@include Opacity(0);
+
+
+//----------
+// BOX SIZING
+//----------
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+//@include box-sizing(border-box);
+
+
+//----------
+// VERTICALLY ALIGN ANYTHING
+//----------
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// .element p {
+//   @include vertical-align();
+// }
+
+
+//----------
+// CSS3 TRANSITIONS
+//----------
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// @include transition(color .3s ease);
