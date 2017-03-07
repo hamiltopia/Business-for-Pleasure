@@ -103,36 +103,170 @@ img {
 
 
 
+
+/* ---------- *\
+	HEAD
+\* ---------- */
+#head {
+  height:2rem;
+  position:relative;
+
+  @media (min-width: $screen-sm) {
+    height:3rem;
+  }//break
+
+  .container {}//container
+}//head
+
+
+
+
 /* ---------- *\
 	BRANDING
 \* ---------- */
-
-
-
 .branding {
   float:left;
-  font-size:1.6rem;
-  height:3rem;
+  font-size:1rem;
+  font-weight:bold;
+  height:2rem;
+
+
+  @media (min-width: $screen-sm) {
+    font-size:1.2rem;
+    height:3rem;
+  }//break
 
   a {
+    @extend .clearfix;
+    display:block;
 
     .logo {
       float:left;
-      height:3rem;
-      margin-right:1rem;
+      height:1rem;
+      margin:.5rem 1rem .5rem 0;
       width:auto;
+
+      @media (min-width: $screen-sm) {
+        height:2rem;
+      }//break
     }//logo
 
     strong {
       display:block;
-      line-height:3rem;
-      overflow:hidden;
+      float:left;
+      line-height:2rem;
+
+      @media (min-width: $screen-sm) {
+        line-height:3rem;
+      }//break
     }
   }//href
 }//branding
 
 
+/* ---------- *\
+	NAVIGATION
+\* ---------- */
 
+.navigation {
+  left:0;
+  padding:1rem;
+  position:absolute;
+  top:100%;
+  width:100%;
+  z-index:1;
+
+  @media (min-width: $screen-sm) {
+    display:inline-block!important;
+    float:right;
+    padding:0;
+    position:relative;
+    width:auto;
+  }//break
+
+  .menu {
+    li {
+
+      @media (min-width: $screen-sm) {
+        float:left;
+      }//break
+
+      a {
+        display:block;
+        font-size:1.2rem;
+        line-height:2rem;
+        text-decoration:none;
+
+        @media (min-width: $screen-sm) {
+          font-size:1rem;
+          line-height:3rem;
+          padding:0 1rem;
+        }//break
+      }//href
+    }//li
+  }//menu
+}//navigation
+
+
+/* ---------- *\
+	NAVIGATION - THEME
+\* ---------- */
+.navigation {
+  background-color:$link;
+
+  @media (min-width: $screen-sm) {
+    background-color:transparent;
+  }//break
+  .menu {
+    li {
+      a {
+        color:$white;
+
+        @media (min-width: $screen-sm) {
+          color:$link;
+
+          &:hover {
+            background-color:$link;
+            color:$white;
+          }//hover
+        }//break
+      }//href
+    }//li
+  }//menu
+}//navigation
+
+
+
+/* ---------- *\
+	NAVIGATION BUTTON
+\* ---------- */
+.mobile-button {
+  border:none;
+  display:block;
+  float:right;
+  font-size:1rem;
+  height:2rem;
+  line-height:2rem;
+  margin:0;
+  padding:0 1rem;
+
+  &:hover {
+    background-color:$white;
+    border:none;
+    color:$link;
+  }
+
+  .fa-times {display:none;}
+
+  @media (min-width: $screen-sm) {
+    display:none;
+  }//break
+
+  &.active {
+    .fa-bars {display:none;}
+    .fa-times {display:block;}
+  }
+}//mobile-button
 
 
 .demo {

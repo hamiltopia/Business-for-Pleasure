@@ -69,7 +69,7 @@ body {
 }
 
 /* line 131, ../sass/_vars.scss */
-.clearfix:after, .container-fluid .container .row:after, .figure:after, .ac-handle:after {
+.clearfix:after, .container-fluid .container .row:after, .figure:after, .ac-handle:after, .branding a:after {
   content: "";
   display: table;
   clear: both;
@@ -183,72 +183,74 @@ small {
 \* ---------- */
 /* line 6, ../sass/_grid.scss */
 .container-fluid .container {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  width: 100%;
+  max-width: 1200px;
 }
-/* line 13, ../sass/_grid.scss */
+/* line 14, ../sass/_grid.scss */
 .container-fluid .container .row {
+  clear: both;
   margin-bottom: .5rem;
 }
-/* line 17, ../sass/_grid.scss */
+/* line 19, ../sass/_grid.scss */
 .container-fluid .container .row > div {
   padding: .5rem;
 }
 @media (min-width: 768px) {
-  /* line 17, ../sass/_grid.scss */
+  /* line 19, ../sass/_grid.scss */
   .container-fluid .container .row > div {
     float: left;
   }
 }
-/* line 24, ../sass/_grid.scss */
+/* line 26, ../sass/_grid.scss */
 .container-fluid .container .row > div.col-25 {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 24, ../sass/_grid.scss */
+  /* line 26, ../sass/_grid.scss */
   .container-fluid .container .row > div.col-25 {
     width: 25%;
   }
 }
-/* line 32, ../sass/_grid.scss */
+/* line 34, ../sass/_grid.scss */
 .container-fluid .container .row > div.col-50 {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 32, ../sass/_grid.scss */
+  /* line 34, ../sass/_grid.scss */
   .container-fluid .container .row > div.col-50 {
     width: 50%;
   }
 }
-/* line 40, ../sass/_grid.scss */
+/* line 42, ../sass/_grid.scss */
 .container-fluid .container .row > div.col-75 {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 40, ../sass/_grid.scss */
+  /* line 42, ../sass/_grid.scss */
   .container-fluid .container .row > div.col-75 {
     width: 75%;
   }
 }
-/* line 48, ../sass/_grid.scss */
+/* line 50, ../sass/_grid.scss */
 .container-fluid .container .row > div.col-33 {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 48, ../sass/_grid.scss */
+  /* line 50, ../sass/_grid.scss */
   .container-fluid .container .row > div.col-33 {
     width: 33.3333%;
   }
 }
-/* line 56, ../sass/_grid.scss */
+/* line 58, ../sass/_grid.scss */
 .container-fluid .container .row > div.col-66 {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 56, ../sass/_grid.scss */
+  /* line 58, ../sass/_grid.scss */
   .container-fluid .container .row > div.col-66 {
     width: 66.6666%;
   }
@@ -565,29 +567,180 @@ img {
 }
 
 /* ---------- *\
-	BRANDING
+	HEAD
 \* ---------- */
-/* line 112, ../sass/screen.scss */
-.branding {
-  float: left;
-  font-size: 1.6rem;
-  height: 3rem;
+/* line 110, ../sass/screen.scss */
+#head {
+  height: 2rem;
+  position: relative;
 }
-/* line 119, ../sass/screen.scss */
-.branding a .logo {
-  float: left;
-  height: 3rem;
-  margin-right: 1rem;
-  width: auto;
-}
-/* line 126, ../sass/screen.scss */
-.branding a strong {
-  display: block;
-  line-height: 3rem;
-  overflow: hidden;
+@media (min-width: 768px) {
+  /* line 110, ../sass/screen.scss */
+  #head {
+    height: 3rem;
+  }
 }
 
-/* line 138, ../sass/screen.scss */
+/* ---------- *\
+	BRANDING
+\* ---------- */
+/* line 127, ../sass/screen.scss */
+.branding {
+  float: left;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 2rem;
+}
+@media (min-width: 768px) {
+  /* line 127, ../sass/screen.scss */
+  .branding {
+    font-size: 1.2rem;
+    height: 3rem;
+  }
+}
+/* line 139, ../sass/screen.scss */
+.branding a {
+  display: block;
+}
+/* line 143, ../sass/screen.scss */
+.branding a .logo {
+  float: left;
+  height: 1rem;
+  margin: .5rem 1rem .5rem 0;
+  width: auto;
+}
+@media (min-width: 768px) {
+  /* line 143, ../sass/screen.scss */
+  .branding a .logo {
+    height: 2rem;
+  }
+}
+/* line 154, ../sass/screen.scss */
+.branding a strong {
+  display: block;
+  float: left;
+  line-height: 2rem;
+}
+@media (min-width: 768px) {
+  /* line 154, ../sass/screen.scss */
+  .branding a strong {
+    line-height: 3rem;
+  }
+}
+
+/* ---------- *\
+	NAVIGATION
+\* ---------- */
+/* line 171, ../sass/screen.scss */
+.navigation {
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  /* line 171, ../sass/screen.scss */
+  .navigation {
+    display: inline-block !important;
+    float: right;
+    padding: 0;
+    position: relative;
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  /* line 188, ../sass/screen.scss */
+  .navigation .menu li {
+    float: left;
+  }
+}
+/* line 194, ../sass/screen.scss */
+.navigation .menu li a {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  /* line 194, ../sass/screen.scss */
+  .navigation .menu li a {
+    font-size: 1rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+  }
+}
+
+/* ---------- *\
+	NAVIGATION - THEME
+\* ---------- */
+/* line 214, ../sass/screen.scss */
+.navigation {
+  background-color: #4183D7;
+}
+@media (min-width: 768px) {
+  /* line 214, ../sass/screen.scss */
+  .navigation {
+    background-color: transparent;
+  }
+}
+/* line 222, ../sass/screen.scss */
+.navigation .menu li a {
+  color: #FFFFFF;
+}
+@media (min-width: 768px) {
+  /* line 222, ../sass/screen.scss */
+  .navigation .menu li a {
+    color: #4183D7;
+  }
+  /* line 228, ../sass/screen.scss */
+  .navigation .menu li a:hover {
+    background-color: #4183D7;
+    color: #FFFFFF;
+  }
+}
+
+/* ---------- *\
+	NAVIGATION BUTTON
+\* ---------- */
+/* line 243, ../sass/screen.scss */
+.mobile-button {
+  border: none;
+  display: block;
+  float: right;
+  font-size: 1rem;
+  height: 2rem;
+  line-height: 2rem;
+  margin: 0;
+  padding: 0 1rem;
+}
+/* line 253, ../sass/screen.scss */
+.mobile-button:hover {
+  background-color: #FFFFFF;
+  border: none;
+  color: #4183D7;
+}
+/* line 259, ../sass/screen.scss */
+.mobile-button .fa-times {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 243, ../sass/screen.scss */
+  .mobile-button {
+    display: none;
+  }
+}
+/* line 266, ../sass/screen.scss */
+.mobile-button.active .fa-bars {
+  display: none;
+}
+/* line 267, ../sass/screen.scss */
+.mobile-button.active .fa-times {
+  display: block;
+}
+
+/* line 272, ../sass/screen.scss */
 .demo {
   background-color: #EFEFEF;
 }

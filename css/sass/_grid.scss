@@ -4,14 +4,16 @@
 
 .container-fluid {
 	.container {
-		max-width:$screen-lg;
 		margin-left:auto;
 		margin-right:auto;
 		padding-left:1rem;
 		padding-right:1rem;
+		width:100%;
+		max-width:$screen-lg;
 
 		.row {
 			@extend .clearfix;
+			clear:both;
 			margin-bottom:.5rem;
 
 			> div {
