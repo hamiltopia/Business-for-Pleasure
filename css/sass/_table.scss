@@ -2,32 +2,34 @@
 	TABLE
 \* ---------- */
 table {
-	border:1px solid $black-two;
+	//border:1px solid $black-two;
 	margin-bottom:1rem;
 	width:100%;
 
+	tr {
+		&:nth-child(even) {
+			background-color:$black-three;
+		}
+	}//tr
+
 	th,
 	td {
-		border:1px solid $black-two;
+		border-bottom:1px solid $black-two;
 		font-size:1rem;
 		padding:.5rem;
 		text-align:left;
+
+		&:first-child,
+		&:first-child {
+		  padding-left: 0; }
+
+		&:last-child,
+		&:last-child {
+		  padding-right: 0; }
 	}//th,td
 
 	th {
-		background-color:$black-three;
+		border-bottom:2px solid $black-two;
 		font-weight:bold;
 	}//th
 }//table
-
-th,
-td {
-  padding: .5rem;
-  text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
-th:first-child,
-td:first-child {
-  padding-left: 0; }
-th:last-child,
-td:last-child {
-  padding-right: 0; }

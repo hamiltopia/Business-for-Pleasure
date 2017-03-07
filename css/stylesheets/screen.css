@@ -69,7 +69,7 @@ body {
 }
 
 /* line 131, ../sass/_vars.scss */
-.clearfix:after, .container-fluid .container .row:after, .figure:after {
+.clearfix:after, .container-fluid .container .row:after, .figure:after, .ac-handle:after {
   content: "";
   display: table;
   clear: both;
@@ -189,58 +189,66 @@ small {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+/* line 13, ../sass/_grid.scss */
+.container-fluid .container .row {
+  margin-bottom: .5rem;
+}
+/* line 17, ../sass/_grid.scss */
+.container-fluid .container .row > div {
+  padding: .5rem;
+}
 @media (min-width: 768px) {
-  /* line 16, ../sass/_grid.scss */
+  /* line 17, ../sass/_grid.scss */
   .container-fluid .container .row > div {
     float: left;
   }
 }
-/* line 22, ../sass/_grid.scss */
+/* line 24, ../sass/_grid.scss */
 .container-fluid .container .row > div.col-25 {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 22, ../sass/_grid.scss */
+  /* line 24, ../sass/_grid.scss */
   .container-fluid .container .row > div.col-25 {
     width: 25%;
   }
 }
-/* line 30, ../sass/_grid.scss */
+/* line 32, ../sass/_grid.scss */
 .container-fluid .container .row > div.col-50 {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 30, ../sass/_grid.scss */
+  /* line 32, ../sass/_grid.scss */
   .container-fluid .container .row > div.col-50 {
     width: 50%;
   }
 }
-/* line 38, ../sass/_grid.scss */
+/* line 40, ../sass/_grid.scss */
 .container-fluid .container .row > div.col-75 {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 38, ../sass/_grid.scss */
+  /* line 40, ../sass/_grid.scss */
   .container-fluid .container .row > div.col-75 {
     width: 75%;
   }
 }
-/* line 46, ../sass/_grid.scss */
+/* line 48, ../sass/_grid.scss */
 .container-fluid .container .row > div.col-33 {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 46, ../sass/_grid.scss */
+  /* line 48, ../sass/_grid.scss */
   .container-fluid .container .row > div.col-33 {
     width: 33.3333%;
   }
 }
-/* line 54, ../sass/_grid.scss */
+/* line 56, ../sass/_grid.scss */
 .container-fluid .container .row > div.col-66 {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 54, ../sass/_grid.scss */
+  /* line 56, ../sass/_grid.scss */
   .container-fluid .container .row > div.col-66 {
     width: 66.6666%;
   }
@@ -351,9 +359,9 @@ input[type="button"] {
   display: inline-block;
   font-size: 1rem;
   font-weight: bold;
-  height: 3rem;
-  line-height: 3rem;
-  padding: 0 30px;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  padding: 0 1.4rem;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -388,48 +396,81 @@ input[type="button"].secondary:hover {
   background-color: #1f5293;
   border-color: #1f5293;
 }
+/* line 98, ../sass/_form.scss */
+.button.danger,
+button.danger,
+input[type="submit"].danger,
+input[type="reset"].danger,
+input[type="button"].danger {
+  background-color: #D64541;
+  border: 1px solid #D64541;
+  color: #FFFFFF;
+}
+/* line 103, ../sass/_form.scss */
+.button.danger:hover,
+button.danger:hover,
+input[type="submit"].danger:hover,
+input[type="reset"].danger:hover,
+input[type="button"].danger:hover {
+  background-color: #bc2c28;
+  border-color: #bc2c28;
+}
+/* line 110, ../sass/_form.scss */
+.button.proceed,
+button.proceed,
+input[type="submit"].proceed,
+input[type="reset"].proceed,
+input[type="button"].proceed {
+  background-color: #26A65B;
+  border: 1px solid #26A65B;
+  color: #FFFFFF;
+}
+/* line 115, ../sass/_form.scss */
+.button.proceed:hover,
+button.proceed:hover,
+input[type="submit"].proceed:hover,
+input[type="reset"].proceed:hover,
+input[type="button"].proceed:hover {
+  background-color: #1c7d44;
+  border-color: #1c7d44;
+}
 
 /* ---------- *\
 	TABLE
 \* ---------- */
 /* line 4, ../sass/_table.scss */
 table {
-  border: 1px solid #e6e6e6;
   margin-bottom: 1rem;
   width: 100%;
 }
-/* line 9, ../sass/_table.scss */
+/* line 10, ../sass/_table.scss */
+table tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+/* line 15, ../sass/_table.scss */
 table th,
 table td {
-  border: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
   font-size: 1rem;
   padding: .5rem;
   text-align: left;
 }
-/* line 17, ../sass/_table.scss */
-table th {
-  background-color: #f7f7f7;
-  font-weight: bold;
-}
-
-/* line 23, ../sass/_table.scss */
-th,
-td {
-  padding: .5rem;
-  text-align: left;
-  border-bottom: 1px solid #E1E1E1;
-}
-
-/* line 28, ../sass/_table.scss */
-th:first-child,
-td:first-child {
+/* line 22, ../sass/_table.scss */
+table th:first-child, table th:first-child,
+table td:first-child,
+table td:first-child {
   padding-left: 0;
 }
-
-/* line 31, ../sass/_table.scss */
-th:last-child,
-td:last-child {
+/* line 26, ../sass/_table.scss */
+table th:last-child, table th:last-child,
+table td:last-child,
+table td:last-child {
   padding-right: 0;
+}
+/* line 31, ../sass/_table.scss */
+table th {
+  border-bottom: 2px solid #e6e6e6;
+  font-weight: bold;
 }
 
 /* ---------- *\
@@ -488,7 +529,65 @@ img {
   line-height: 2rem;
 }
 
-/* line 87, ../sass/screen.scss */
+/* ---------- *\
+	ACCORDION
+\* ---------- */
+/* line 80, ../sass/screen.scss */
+.ac-handle {
+  cursor: pointer;
+}
+/* line 84, ../sass/screen.scss */
+.ac-handle .fa {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  float: right;
+}
+/* line 89, ../sass/screen.scss */
+.ac-handle.open {
+  color: #4183D7;
+}
+/* line 92, ../sass/screen.scss */
+.ac-handle.open .fa {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067812, M12=-0.7071067812, M21=0.7071067812, M22=0.7071067812)";
+  filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067812, M12=-0.7071067812, M21=0.7071067812, M22=0.7071067812);
+}
+/* line 97, ../sass/screen.scss */
+.ac-handle.hover {
+  color: #4183D7;
+}
+
+/* ---------- *\
+	BRANDING
+\* ---------- */
+/* line 112, ../sass/screen.scss */
+.branding {
+  float: left;
+  font-size: 1.6rem;
+  height: 3rem;
+}
+/* line 119, ../sass/screen.scss */
+.branding a .logo {
+  float: left;
+  height: 3rem;
+  margin-right: 1rem;
+  width: auto;
+}
+/* line 126, ../sass/screen.scss */
+.branding a strong {
+  display: block;
+  line-height: 3rem;
+  overflow: hidden;
+}
+
+/* line 138, ../sass/screen.scss */
 .demo {
   background-color: #EFEFEF;
 }

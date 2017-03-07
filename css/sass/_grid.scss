@@ -12,8 +12,10 @@
 
 		.row {
 			@extend .clearfix;
+			margin-bottom:.5rem;
 
 			> div {
+				padding:.5rem;
 
 				@media (min-width: $screen-sm) {
 					float:left;
