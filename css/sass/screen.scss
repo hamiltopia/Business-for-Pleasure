@@ -9,12 +9,63 @@
 
 
 /* ---------- *\
-	COMMENT
+	IMAGES
 \* ---------- */
 
+/* ---------- *\
+Global Image Style
+\* ---------- */
+img {
+	display:block;
+	margin:0;
+	max-width:100%;
+  width:100%;
+}//img
 
+//Image in Figure container
+.figure {
+  @extend .clearfix;
+  margin:0 0 1rem;
+  max-width:100%;
+  width:100%;
 
+  .figure-img {
+  }//img
 
+  &.figure-left {
+    float:none;
+    margin:0 0 1rem;
+    width:100%;
+
+    @media (min-width: $screen-sm) {
+      float:left;
+      margin:0 2rem 1rem 0;
+      width:50%;
+    }//break
+  }//float-left
+
+  &.figure-right {
+    float:none;
+    margin:0 0 1rem 0;
+    width:100%;
+
+    @media (min-width: $screen-sm) {
+      float:right;
+      margin:0 0 1rem 2rem;
+      width:50%;
+
+      .figure-img {
+      }//img
+    }//break
+  }//float-left
+
+  figcaption {
+    float:right;
+    font-size:80%;
+    color:$black-one;
+    line-height:2rem;
+  }
+}//figure-image
 
 
 

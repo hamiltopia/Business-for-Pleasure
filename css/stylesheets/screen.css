@@ -69,7 +69,7 @@ body {
 }
 
 /* line 131, ../sass/_vars.scss */
-.clearfix:after, .container-fluid .container .row:after {
+.clearfix:after, .container-fluid .container .row:after, .figure:after {
   content: "";
   display: table;
   clear: both;
@@ -412,10 +412,83 @@ table th {
   font-weight: bold;
 }
 
+/* line 23, ../sass/_table.scss */
+th,
+td {
+  padding: .5rem;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+/* line 28, ../sass/_table.scss */
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+/* line 31, ../sass/_table.scss */
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
 /* ---------- *\
-	COMMENT
+	IMAGES
 \* ---------- */
-/* line 36, ../sass/screen.scss */
+/* ---------- *\
+Global Image Style
+\* ---------- */
+/* line 18, ../sass/screen.scss */
+img {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* line 26, ../sass/screen.scss */
+.figure {
+  margin: 0 0 1rem;
+  max-width: 100%;
+  width: 100%;
+}
+/* line 35, ../sass/screen.scss */
+.figure.figure-left {
+  float: none;
+  margin: 0 0 1rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 35, ../sass/screen.scss */
+  .figure.figure-left {
+    float: left;
+    margin: 0 2rem 1rem 0;
+    width: 50%;
+  }
+}
+/* line 47, ../sass/screen.scss */
+.figure.figure-right {
+  float: none;
+  margin: 0 0 1rem 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  /* line 47, ../sass/screen.scss */
+  .figure.figure-right {
+    float: right;
+    margin: 0 0 1rem 2rem;
+    width: 50%;
+  }
+}
+/* line 62, ../sass/screen.scss */
+.figure figcaption {
+  float: right;
+  font-size: 80%;
+  color: #333333;
+  line-height: 2rem;
+}
+
+/* line 87, ../sass/screen.scss */
 .demo {
   background-color: #EFEFEF;
 }
