@@ -9,6 +9,14 @@ $(document).ready(function() {
 	});
 
 
+  $(".menu a").click(function() {
+    $(this).toggleClass("active");
+    $(this).next("ul").slideToggle( "fast", function() {
+      // Animation complete.
+    });
+	});
+
+
 	//ACCORDION
 	$(".ac-handle").click(function() {
 		$(".ac-handle").removeClass("open");
@@ -29,6 +37,8 @@ $(document).ready(function() {
 
 	$(".ac-drawer").hide();
   //ACCORDION
+
+
 
 
 

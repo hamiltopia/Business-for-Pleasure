@@ -62,9 +62,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
 		@include border-radius(4px);
-		background-color: $white;
     border: 1px solid $black-two;
-		color:$link;
     cursor: pointer;
     display: inline-block;
 		font-size:1rem;
@@ -77,45 +75,17 @@ input[type="button"] {
     text-decoration: none;
     white-space: nowrap;
 
-	&:hover {
-		background-color: $link;
-    border: 1px solid $link;
-		color:$white;
-	}
+	&:hover {}
 
 	&.secondary {
-		background-color: $link;
-    border: 1px solid $link;
-		color:$white;
-
-		&:hover {
-			background-color: $link-hover;
-			border-color:$link-hover;
-		}//hover
-
+		&:hover {}//hover
 	}//secondary
 
 	&.danger {
-		background-color: $red;
-    border: 1px solid $red;
-		color:$white;
-
-		&:hover {
-			background-color: darken( $red, 10% );
-			border-color: darken( $red, 10% );
-		}//hover
-
+		&:hover {}//hover
 	}//secondary
 
 	&.proceed {
-		background-color: $green;
-    border: 1px solid $green;
-		color:$white;
-
-		&:hover {
-			background-color: darken( $green, 10% );
-			border-color: darken( $green, 10% );
-		}//hover
-
+		&:hover {}//hover
 	}//secondary
 }//buttons

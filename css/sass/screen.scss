@@ -1,9 +1,10 @@
-@import 'cssreset';
-@import 'vars';
-@import 'type';
-@import 'grid';
-@import 'form';
-@import 'table';
+@import "cssreset";
+@import "vars";
+@import "theme";
+@import "type";
+@import "grid";
+@import "form";
+@import "table";
 
 
 
@@ -185,7 +186,36 @@ img {
   }//break
 
   .menu {
+
+    //nested ul
+    ul {
+      display:none;
+      left:0;
+      position:absolute;
+      top:100%;
+      width:10rem;
+
+      //nestednested ul
+      ul {
+        display:none;
+        position:static;
+      }//nestednested ul
+    }//nested ul
+
+    // LIs
     li {
+      position:relative;
+
+      //nested ul
+      li {
+        float:none;
+
+        //nested href
+        a {
+          font-size:1rem;
+          line-height:1.6rem;
+        }//nested href
+      }
 
       @media (min-width: $screen-sm) {
         float:left;
@@ -197,43 +227,28 @@ img {
         line-height:2rem;
         text-decoration:none;
 
+        &.active {
+          .fa-plus {
+            @include rotate(-45deg);
+          }
+        }//
+
         @media (min-width: $screen-sm) {
           font-size:1rem;
           line-height:3rem;
           padding:0 1rem;
         }//break
+
+        //icon
+        .fa-plus {
+          @include transition(all .3s);
+        }
       }//href
     }//li
   }//menu
 }//navigation
 
 
-/* ---------- *\
-	NAVIGATION - THEME
-\* ---------- */
-.navigation {
-  background-color:$link;
-
-  @media (min-width: $screen-sm) {
-    background-color:transparent;
-  }//break
-  .menu {
-    li {
-      a {
-        color:$white;
-
-        @media (min-width: $screen-sm) {
-          color:$link;
-
-          &:hover {
-            background-color:$link;
-            color:$white;
-          }//hover
-        }//break
-      }//href
-    }//li
-  }//menu
-}//navigation
 
 
 

@@ -1,0 +1,112 @@
+
+
+/* ---------- *\
+	NAVIGATION - THEME
+\* ---------- */
+.navigation {
+  background-color:$link;
+
+  @media (min-width: $screen-sm) {
+    background-color:transparent;
+  }//break
+  .menu {
+
+    //nested ul
+    ul {
+      background-color:$link;
+
+      ul {
+        background-color:darken( $link, 20% );
+
+        //nestednested ul
+        ul {
+          background-color:darken( $link, 30% );
+        }
+      }
+    }//nested ul
+
+    li {
+      a {
+        color:$white;
+
+        @media (min-width: $screen-sm) {
+          color:$link;
+
+          &:hover,
+          &.active {
+            background-color:$link;
+            color:$white;
+          }//hover
+        }//break
+      }//href
+
+      //nestednested li
+      li {
+        //nestednested href
+        a {
+          color:$white;
+
+          &:hover {
+            background-color:$link-hover;
+          }//hover
+        }//nested href
+      }
+    }//li
+  }//menu
+}//navigation
+
+
+
+/* ---------- *\
+	BUTTONS
+\* ---------- */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+		background-color: $white;
+    border-color: $black-two;
+		color:$link;
+
+	&:hover {
+		background-color: $link;
+    border-color: $link;
+		color:$white;
+	}
+
+	&.secondary {
+		background-color: $link;
+    border-color: $link;
+		color:$white;
+
+		&:hover {
+			background-color: $link-hover;
+			border-color:$link-hover;
+		}//hover
+	}//secondary
+
+	&.danger {
+		background-color: $red;
+    border-color: $red;
+		color:$white;
+
+		&:hover {
+			background-color: darken( $red, 10% );
+			border-color: darken( $red, 10% );
+		}//hover
+	}//danger
+
+	&.proceed {
+		background-color: $green;
+    border-color: $green;
+		color:$white;
+
+		&:hover {
+			background-color: darken( $green, 10% );
+			border-color: darken( $green, 10% );
+		}//hover
+	}//proceed
+
+}//buttons
