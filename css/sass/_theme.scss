@@ -17,11 +17,11 @@ $screen-lg:   1400px !default;  //HD Desktop
 /* ---------- *\
 	COLORS
 \* ---------- */
-$primary:     #446CB3;    //Blue
-$success:     #26A65B;    //Green
-$info:        #6BB9F0;    //Light Blue
-$warning:     #F89406;    //Orange
-$danger:      #D91E18;    //Red
+$blue:     #446CB3;    //Blue
+$green:     #26A65B;    //Green
+$bluelt:        #6BB9F0;    //Light Blue
+$orange:     #F89406;    //Orange
+$red:      #D91E18;    //Red
 
 $yellow:      #F4D03F;    //Red
 $purple:      #663399;    //Red
@@ -29,8 +29,8 @@ $pink:        #D2527F;    //Red
 
 $text:        #333333;    //Text is not Black
 
-$link:        darken( $primary, 0% );
-$link-hover:  lighten( $primary, 20% );
+$link:        darken( $blue, 0% );
+$link-hover:  lighten( $blue, 20% );
 
 $white:       #FFFFFF;
 $black:       #000000;

@@ -183,14 +183,11 @@
 					</div><!-- row -->
 					<div class="row"><!-- -->
 						<div class="col-20 offset-20 demo">col-20 offset-20</div><!-- col-20 -->
-						<div class="col-20 demo">col-20</div><!-- col-20 -->
-						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-40 demo">col-40</div><!-- col-40 -->
 						<div class="col-20 demo">col-20</div><!-- col-20 -->
 					</div><!-- row -->
 					<div class="row"><!-- -->
-						<div class="col-20 offset-40 demo">col-20 offset-40</div><!-- col-20 -->
-						<div class="col-20 demo">col-20</div><!-- col-20 -->
-						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-60 offset-40 demo">col-60 offset-40</div><!-- col-60 -->
 					</div><!-- row -->
 					<div class="row"><!-- -->
 						<div class="col-20 offset-60 demo">col-20 offset-60</div><!-- col-20 -->
@@ -212,12 +209,12 @@
 					<div class="row"><!-- -->
 						<div class="col-75">
 
-							<div class="swatch primary">Primary</div>
+							<div class="swatch primary">Blue</div>
 							<div class="swatch secondary">Secondary</div>
-							<div class="swatch info">Info</div>
-							<div class="swatch success">Success</div>
-							<div class="swatch warning">Warning</div>
-							<div class="swatch danger">Danger</div>
+							<div class="swatch info">Blue Light</div>
+							<div class="swatch success">Green</div>
+							<div class="swatch warning">Orange</div>
+							<div class="swatch danger">Red</div>
 
 							<div class="swatch yellow">Yellow</div>
 							<div class="swatch purple">Purple</div>
@@ -303,13 +300,13 @@
 							<h4>Accordion</h4>
 
 							<h5 class="ac-handle">Handle One <i class="fa fa-plus" aria-hidden="true"></i></h5>
-							<div class="ac-drawer"><p>Drawer One. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+							<div class="ac-drawer"><p>Drawer One. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
 
 							<h5 class="ac-handle">Handle Two <i class="fa fa-plus" aria-hidden="true"></i></h5>
-							<div class="ac-drawer"><p>Drawer Two. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+							<div class="ac-drawer"><p>Drawer Two. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p></div>
 
 							<h5 class="ac-handle">Handle Three <i class="fa fa-plus" aria-hidden="true"></i></h5>
-							<div class="ac-drawer"><p>Drawer Three. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p></div>
+							<div class="ac-drawer"><p>Drawer Three. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p></div>
 
 						</div><!-- col-25 -->
 					</div><!-- row -->
@@ -340,9 +337,15 @@
 									<small>This is some instructional text.</small>
 								</div><!-- form group -->
 
+								<div class="form-group success">
+									<label for="text-input-one">Field Label <strong>*</strong></label>
+									<input type="text" id="text-input-one" value="Yeah!">
+									<small>Success.</small>
+								</div><!-- form group -->
+
 								<div class="form-group error">
 									<label for="text-input-one">Field Label <strong>*</strong></label>
-									<input type="text" id="text-input-one" placeholder="Enter Some Text">
+									<input type="text" id="text-input-one" value="Meh">
 									<small>ERROR.</small>
 								</div><!-- form group -->
 
@@ -355,6 +358,8 @@
 								<div class="form-group">
 									<label for="exampleInputPassword1">Password</label>
 									<input type="password" id="exampleInputPassword1" placeholder="Password">
+									<small>Please include a Capital letter and a Number.</small>
+
 								</div><!-- form group -->
 
 								<div class="form-group">
@@ -407,6 +412,63 @@
 
 
 			<div id="table" class="container-fluid">
+				<div class="container">
+
+					<h3 class="heading">Lists</h3>
+
+					<div class="row"><!-- -->
+						<div class="col-33">
+
+							<ul class="naked">
+		            <li>Naked lists have no basic styles</li>
+		            <li>
+		              They use the circle list style
+		              <ul>
+		                <li>Nested lists styled to feel right</li>
+		                <li>Can nest either type of list into the other</li>
+		              </ul>
+		            </li>
+		            <li>Just more list items mama san</li>
+		          </ul>
+
+						</div><!-- col-75 -->
+						<div class="col-33">
+
+							<ul>
+		            <li>Unordered lists have basic styles</li>
+		            <li>
+		              They use the circle list style
+		              <ul>
+		                <li>Nested lists styled to feel right</li>
+		                <li>Can nest either type of list into the other</li>
+		              </ul>
+		            </li>
+		            <li>Just more list items mama san</li>
+		          </ul>
+
+						</div><!-- col-75 -->
+						<div class="col-33">
+
+							<ol>
+		            <li>Ordered lists also have basic styles</li>
+		            <li>
+		              They use the decimal list style
+		              <ul>
+		                <li>Ordered and unordered can be nested</li>
+		                <li>Can nest either type of list into the other</li>
+		              </ul>
+		            </li>
+		            <li>Last list item just for the fun</li>
+		          </ol>
+
+
+						</div><!-- col-25 -->
+					</div><!-- row -->
+
+				</div><!-- container -->
+			</div><!-- container-fluid -->
+
+			<br><br><div id="table" class="container-fluid">
 				<div class="container">
 
 					<h3 class="heading">Table</h3>

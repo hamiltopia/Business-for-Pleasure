@@ -40,10 +40,10 @@ input[type="color"] {
 }//form elements
 
 
-//ERROR!
-.error {
+//SUCCESS!
+.success {
 	label {
-		color:$danger;
+		color:$green;
 	}//label
 
 	select,
@@ -62,15 +62,48 @@ input[type="color"] {
 	input[type="search"],
 	input[type="tel"],
 	input[type="color"] {
-		background-color:lighten( $danger, 55% );
-		border-color:$danger;
-		color:$danger;
+		border-color:$green;
+		color:$green;
 		font-weight:bold;
 
 		&:active,
 		&:focus {
-			border-color:$danger;
-			color:$danger;
+			border-color:$green;
+			color:$green;
+		}
+	}//form elements
+}//error
+
+//ERROR!
+.error {
+	label {
+		color:$red;
+	}//label
+
+	select,
+	textarea,
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"] {
+		border-color:$red;
+		color:$red;
+		font-weight:bold;
+
+		&:active,
+		&:focus {
+			border-color:$red;
+			color:$red;
 		}
 	}//form elements
 }//error
@@ -98,7 +131,7 @@ form {
 
 			//Thnis is the "required" asterisk
 			strong {
-				color:$danger;
+				color:$red;
 			}
 		}//label
 
@@ -165,52 +198,52 @@ input[type="button"] {
 	}
 
 	&.primary {
-		background-color: $primary;
-    border-color: $primary;
+		background-color: $blue;
+    border-color: $blue;
 		color:$white;
 
 		&:hover {
-			background-color:darken( $primary, 15% );
+			background-color:darken( $blue, 15% );
 		}//hover
 	}//primary
 
 	&.info {
-		background-color: $info;
-    border-color: $info;
+		background-color: $bluelt;
+    border-color: $bluelt;
 		color:$white;
 
 		&:hover {
-			background-color:darken( $info, 10% );
+			background-color:darken( $bluelt, 10% );
 		}//hover
 	}//info
 
 	&.success {
-		background-color: $success;
-    border-color: $success;
+		background-color: $green;
+    border-color: $green;
 		color:$white;
 
 		&:hover {
-			background-color:darken( $success, 10% );
+			background-color:darken( $green, 10% );
 		}//hover
 	}//success
 
 	&.warning {
-		background-color: $warning;
-    border-color: $warning;
+		background-color: $orange;
+    border-color: $orange;
 		color:$white;
 
 		&:hover {
-			background-color:darken( $warning, 10% );
+			background-color:darken( $orange, 10% );
 		}//hover
 	}//warning
 
 	&.danger {
-		background-color: $danger;
-    border-color: $danger;
+		background-color: $red;
+    border-color: $red;
 		color:$white;
 
 		&:hover {
-			background-color:darken( $danger, 10% );
+			background-color:darken( $red, 10% );
 		}//hover
 	}//dnager
 
