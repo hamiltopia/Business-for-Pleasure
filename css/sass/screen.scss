@@ -5,6 +5,7 @@
 @import "grid";
 @import "form";
 @import "table";
+@import "card";
 
 
 
@@ -13,9 +14,7 @@
 	IMAGES
 \* ---------- */
 
-/* ---------- *\
-Global Image Style
-\* ---------- */
+//Global Image Style
 img {
 	display:block;
 	margin:0;
@@ -63,7 +62,7 @@ img {
   figcaption {
     float:right;
     font-size:80%;
-    color:$black-one;
+    color:$grey;
     line-height:2rem;
   }
 }//figure-image
@@ -186,14 +185,16 @@ img {
   }//break
 
   .menu {
-
     //nested ul
     ul {
       display:none;
-      left:0;
-      position:absolute;
-      top:100%;
-      width:10rem;
+
+			@media (min-width: $screen-sm) {
+				left:0;
+	      position:absolute;
+	      top:100%;
+				width:10rem;
+		  }//break
 
       //nestednested ul
       ul {
@@ -213,7 +214,7 @@ img {
         //nested href
         a {
           font-size:1rem;
-          line-height:1.6rem;
+          line-height:2rem;
         }//nested href
       }
 
@@ -224,19 +225,19 @@ img {
       a {
         display:block;
         font-size:1.2rem;
-        line-height:2rem;
+        line-height:2.4rem;
+				padding:0 1rem;
         text-decoration:none;
 
         &.active {
           .fa-plus {
-            @include rotate(-45deg);
+            @include rotate(45deg);
           }
         }//
 
         @media (min-width: $screen-sm) {
           font-size:1rem;
-          line-height:3rem;
-          padding:0 1rem;
+          line-height:2.4rem;
         }//break
 
         //icon
@@ -284,6 +285,145 @@ img {
 }//mobile-button
 
 
+
+//Demo style for the grid presentation
 .demo {
 	background-color:#EFEFEF;
+	border-color:$white;
+	border-style:solid;
+	border-width:0 1px 1px 0;
+	padding:.5rem;
 }
+
+/* ---------- *\
+	Demo for Palette Presentation
+\* ---------- */
+#palette {
+	.swatch {
+		float:left;
+		font-size:.9rem;
+		margin:1%;
+		width:31.3333%;
+		text-transform:uppercase;
+
+		&:before {
+			@include box-sizing(border-box);
+			@include border-radius(3px);
+			border:1px solid $greylt;
+			color:$white;
+			content:"Text";
+			display:block;
+			margin-bottom:.5rem;
+			padding:2rem .5rem .5rem;
+			text-transform:none;
+			width:100%;
+		}//before
+
+		//primary
+		&.primary {
+			&:before {
+				background-color:$primary;
+				border-color:$primary;
+			}//before
+		}//primary
+
+		//secondary
+		&.secondary {
+			&:before {
+				background-color:$white;
+				border-color:$primary;
+				color:$primary
+			}//before
+		}//secondary
+
+		//success
+		&.success {
+			&:before {
+				background-color:$success;
+				border-color:$success;
+			}//before
+		}//success
+
+		//info
+		&.info {
+			&:before {
+				background-color:$info;
+				border-color:$info;
+			}//before
+		}//info
+
+		//warning
+		&.warning {
+			&:before {
+				background-color:$warning;
+				border-color:$warning;
+			}//before
+		}//warning
+
+		//danger
+		&.danger {
+			&:before {
+				background-color:$danger;
+				border-color:$danger;
+			}//before
+		}//danger
+
+		//yellow
+		&.yellow {
+			&:before {
+				background-color:$yellow;
+				border-color:$yellow;
+			}//before
+		}//yellow
+
+		//purple
+		&.purple {
+			&:before {
+				background-color:$purple;
+				border-color:$purple;
+			}//before
+		}//purple
+
+		//pink
+		&.pink {
+			&:before {
+				background-color:$pink;
+				border-color:$pink;
+			}//before
+		}//pink
+
+		//black
+		&.black {
+			&:before {
+				background-color:$black;
+				border-color:$black;
+			}//before
+		}//pink
+
+		//greydk
+		&.greydk {
+			&:before {
+				background-color:$greydk;
+				border-color:$greydk;
+			}//before
+		}//greydk
+
+		//grey
+		&.grey {
+			&:before {
+				background-color:$grey;
+				border-color:$grey;
+			}//before
+		}//grey
+
+		//greylt
+		&.greylt {
+			&:before {
+				background-color:$greylt;
+				border-color:$greylt;
+			}//before
+		}//greylt
+
+
+	}//swatch
+}//palette

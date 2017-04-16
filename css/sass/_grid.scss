@@ -2,67 +2,161 @@
 	GRID
 \* ---------- */
 
-.container-fluid {
+.container-fluid,
+.container {
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+
+	.row {
+		@extend .clearfix;
+		clear:both;
+		//margin-bottom:.5rem;
+
+		> div,
+		section,
+		aside {
+			padding:1rem;
+			width:100%;
+
+			@media (min-width: $screen-sm) {
+				float:left;
+
+			}
+
+			&.col-25 {
+				@media (min-width: $screen-sm) {
+					width:25%;
+				}//break
+			}//25
+
+			&.col-50 {
+				@media (min-width: $screen-sm) {
+					width:50%;
+				}//break
+			}//50
+
+			&.col-75 {
+				@media (min-width: $screen-sm) {
+					width:75%;
+				}//break
+			}//75
+
+			&.col-33 {
+				@media (min-width: $screen-sm) {
+					width:33.3333%;
+				}//break
+			}//33
+
+			&.col-66 {
+				@media (min-width: $screen-sm) {
+					width:66.6666%;
+				}//break
+			}//66
+
+			&.col-20 {
+				@media (min-width: $screen-sm) {
+					width:20%;
+				}//break
+			}//20
+
+			&.col-30 {
+				@media (min-width: $screen-sm) {
+					width:30%;
+				}//break
+			}//30
+
+			&.col-40 {
+				@media (min-width: $screen-sm) {
+					width:40%;
+				}//break
+			}//40
+
+			&.col-60 {
+				@media (min-width: $screen-sm) {
+					width:60%;
+				}//break
+			}//60
+
+			&.col-70 {
+				@media (min-width: $screen-sm) {
+					width:70%;
+				}//break
+			}//70
+
+			&.col-80 {
+				@media (min-width: $screen-sm) {
+					width:80%;
+				}//break
+			}//80
+
+
+
+			// ---------
+			// OFFSETS
+			// ---------
+			&.offset-25 {
+				@media (min-width: $screen-sm) {
+					margin-left:25%;
+				}//break
+
+			}//Offset 25
+
+			&.offset-50 {
+				@media (min-width: $screen-sm) {
+					margin-left:50%;
+				}//break
+			}//Offset 50
+
+			&.offset-75 {
+				@media (min-width: $screen-sm) {
+					margin-left:75%;
+				}//break
+			}//Offset 75
+
+			&.offset-33 {
+				@media (min-width: $screen-sm) {
+					margin-left:33.3333%;
+				}//break
+			}//Offset 75
+
+			&.offset-66 {
+				@media (min-width: $screen-sm) {
+					margin-left:66.6666%;
+				}//break
+			}//Offset 75
+
+			&.offset-20 {
+				@media (min-width: $screen-sm) {
+					margin-left:20%;
+				}//break
+			}//Offset 20
+
+			&.offset-40 {
+				@media (min-width: $screen-sm) {
+					margin-left:40%;
+				}//break
+			}//Offset 40
+
+			&.offset-60 {
+				@media (min-width: $screen-sm) {
+					margin-left:60%;
+				}//break
+			}//Offset 60
+
+			&.offset-80 {
+				@media (min-width: $screen-sm) {
+					margin-left:80%;
+				}//break
+			}//Offset 80
+
+		}//columns
+	}//row
+
+	//container
 	.container {
-		margin-left:auto;
-		margin-right:auto;
+		max-width:$screen-lg;
 		padding-left:1rem;
 		padding-right:1rem;
-		width:100%;
-		max-width:$screen-lg;
-
-		.row {
-			@extend .clearfix;
-			clear:both;
-			margin-bottom:.5rem;
-
-			> div {
-				padding:.5rem;
-
-				@media (min-width: $screen-sm) {
-					float:left;
-				}
-
-				&.col-25 {
-					width:100%;
-
-					@media (min-width: $screen-sm) {
-						width:25%;
-					}//break
-				}//25
-
-				&.col-50 {
-					width:100%;
-
-					@media (min-width: $screen-sm) {
-						width:50%;
-					}//break
-				}//50
-
-				&.col-75 {
-					width:100%;
-
-					@media (min-width: $screen-sm) {
-						width:75%;
-					}//break
-				}//75
-
-				&.col-33 {
-					width:100%;
-
-					@media (min-width: $screen-sm) {
-						width:33.3333%;
-					}//break
-				}//33
-
-				&.col-66 {
-					width:100%;
-
-					@media (min-width: $screen-sm) {
-						width:66.6666%;
-					}//break
-				}//33
-			}//columns
-		}//row
 	}//container
 }//container-fluid

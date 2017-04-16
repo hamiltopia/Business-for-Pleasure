@@ -2,34 +2,48 @@
 	TABLE
 \* ---------- */
 table {
-	//border:1px solid $black-two;
+	//border:1px solid $grey;
 	margin-bottom:1rem;
 	width:100%;
 
-	tr {
-		&:nth-child(even) {
-			background-color:$black-three;
-		}
-	}//tr
-
 	th,
 	td {
-		border-bottom:1px solid $black-two;
+		border-bottom:1px solid $greylt;
 		font-size:1rem;
-		padding:.5rem;
+		padding:.5rem 0;
 		text-align:left;
-
-		&:first-child,
-		&:first-child {
-		  padding-left: 0; }
-
-		&:last-child,
-		&:last-child {
-		  padding-right: 0; }
 	}//th,td
 
 	th {
-		border-bottom:2px solid $black-two;
+		border-bottom:2px solid $greylt;
 		font-weight:bold;
 	}//th
+
+	tfoot {
+		td {
+			border-bottom:none;
+		}//th,td
+	}//tfoot
+
+
+	//Stripped Table ----------
+	&.stripped {
+
+		th {
+			border-bottom-color:$grey;
+		}//th
+
+		tr {
+			&:nth-child(even) {
+				background-color:$greylt;
+			}
+		}//tr
+
+
+
+		th,
+		td {
+			padding:.5rem;
+		}//th,td
+	}//stripped
 }//table

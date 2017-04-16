@@ -1,11 +1,18 @@
 /* ---------- *\
 	TYPOGRAPHY
 \* ---------- */
+@import "https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600|Open+Sans+Condensed:300,700";
+
+$open-sans: "Open Sans", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+$open-sans-con: "Open Sans Condensed", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+
 
 //  Text Sizing ----------
 html,
 body {
 	@include font-smoothing(on);
+	font-family: $open-sans;
+	font-size:100%;
 
 	@media (min-width: $screen-md) {
   	font-size:105%;
@@ -16,24 +23,38 @@ body {
 }//html,body
 
 
+//  Text Styling ----------
+strong {
+	font-weight:bold;
+}
+
+em {
+	font-style:italic;
+}
+
+//  Headers ----------
+h1, h2, h3, h4 {
+	font-family: $open-sans-con;
+	font-weight:700;
+}
 
 
 h1 {
-	color:$black-one;
+	color:$greydk;
 	font-size:2.8rem;
 	line-height: 3.2rem;
 	margin-bottom:1.2rem;
 }//h1
 
 h2 {
-	color:$black-one;
+	color:$greydk;
 	font-size:2.4rem;
 	line-height: 2.8rem;
 	margin-bottom:1.2rem;
 }//h1
 
 h3 {
-	color:$black-one;
+	color:$greydk;
 	font-size:2rem;
 	line-height: 2.6rem;
 	margin-bottom:1.2rem;
@@ -54,7 +75,6 @@ h5 {
 }//h1
 
 h6 {
-
 	font-size:1rem;
 	font-weight:bold;
 	line-height: 1.6rem;
@@ -62,13 +82,13 @@ h6 {
 }//h1
 
 .heading {
-	border-bottom:2px solid $black-two;
+	border-bottom:1px solid $greylt;
 	margin:2rem auto 1rem;
 	padding:.5rem 0;
 }
 
 p {
-	color:$black-one;
+	color:$greydk;
 	font-size:1rem;
 	line-height: 1.4rem;
 	margin-bottom:1rem;
@@ -89,3 +109,56 @@ a {
 small {
 	font-size:75%;
 }//small
+
+
+
+
+
+/* ---------- *\
+	TYPOGRAPHY FLAVORS
+\* ---------- */
+
+//text-primary
+.text-primary {
+	color:$primary
+}//text-primary
+
+//text-primary
+.text-secondary {
+	color:$grey
+}//text-primary
+
+//text-info
+.text-info {
+	color:$info
+}//text-info
+
+//text-success
+.text-success {
+	color:$success
+}//text-success
+
+//text-warning
+.text-warning {
+	color:$warning
+}//text-warning
+
+//text-danger
+.text-danger {
+	color:$danger
+}//text-danger
+
+//text-yellow
+.text-yellow {
+	color:$yellow
+}//text-yellow
+
+//text-purple
+.text-purple {
+	color:$purple
+}//text-purple
+
+//text-pink
+.text-pink {
+	color:$pink
+}//text-pink

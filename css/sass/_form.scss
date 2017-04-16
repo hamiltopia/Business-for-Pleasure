@@ -17,15 +17,15 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-	@include border-radius(4px);
+	@include border-radius(2px);
 	background-color:$white;
 	border:none;
-	border:1px solid $black-two;
+	border:1px solid $greylt;
 	box-sizing: border-box;
-	color:$black-one;
+	color:$greydk;
 	display:block;
 	font-size:1rem;
-	height:3rem;
+	height:2.6rem;
 	margin:.5rem 0;
 	padding:.5rem;
 	width:100%;
@@ -33,11 +33,55 @@ input[type="color"] {
 	&:active,
 	&:focus {
 		color:$black;
-		border-color:$black-one;
+		border-color:$link;
 		outline:none;
 	}
 
 }//form elements
+
+
+//ERROR!
+.error {
+	label {
+		color:$danger;
+	}//label
+
+	select,
+	textarea,
+	input[type="text"],
+	input[type="password"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="date"],
+	input[type="month"],
+	input[type="time"],
+	input[type="week"],
+	input[type="number"],
+	input[type="email"],
+	input[type="url"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="color"] {
+		background-color:lighten( $danger, 55% );
+		border-color:$danger;
+		color:$danger;
+		font-weight:bold;
+
+		&:active,
+		&:focus {
+			border-color:$danger;
+			color:$danger;
+		}
+	}//form elements
+}//error
+
+//hack for FF
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+	margin-top:-2px;
+	margin-bottom: -2px;
+}
 
 textarea {
 	height:auto;
@@ -51,9 +95,31 @@ form {
 		label {
 			font-size:1rem;
 			font-weight:bold;
+
+			//Thnis is the "required" asterisk
+			strong {
+				color:$danger;
+			}
 		}//label
 
 	}//form-group
+
+
+	.check-radio {
+		label {
+			font-weight:normal;
+			padding-left:1.2rem;
+			position:relative;
+
+			input[type=checkbox],
+			input[type=radio] {
+				position:absolute;
+				top:.2rem;
+				left:0;
+
+			}//iput
+		}//label
+	}//check-radio
 }//form
 
 .button,
@@ -61,31 +127,122 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-		@include border-radius(4px);
-    border: 1px solid $black-two;
-    cursor: pointer;
-    display: inline-block;
-		font-size:1rem;
-		font-weight:bold;
-    height: 2.6rem;
-	  line-height: 2.6rem;
-    padding: 0 1.4rem;
-    text-align: center;
-	  text-transform: uppercase;
-    text-decoration: none;
-    white-space: nowrap;
+	@include border-radius(4px);
+  border: 1px solid $greydk;
+  cursor: pointer;
+  display: inline-block;
+	font-size:.8rem;
+	font-weight:700;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  padding: 0 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}//buttons
 
-	&:hover {}
 
-	&.secondary {
-		&:hover {}//hover
-	}//secondary
+
+
+/* ---------- *\
+	BUTTONS
+\* ---------- */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+		background-color: $white;
+    border-color: $link;
+		color:$link;
+
+	&:hover {
+		background-color: $link;
+    border-color: $link;
+		color:$white;
+	}
+
+	&.primary {
+		background-color: $primary;
+    border-color: $primary;
+		color:$white;
+
+		&:hover {
+			background-color:darken( $primary, 15% );
+		}//hover
+	}//primary
+
+	&.info {
+		background-color: $info;
+    border-color: $info;
+		color:$white;
+
+		&:hover {
+			background-color:darken( $info, 10% );
+		}//hover
+	}//info
+
+	&.success {
+		background-color: $success;
+    border-color: $success;
+		color:$white;
+
+		&:hover {
+			background-color:darken( $success, 10% );
+		}//hover
+	}//success
+
+	&.warning {
+		background-color: $warning;
+    border-color: $warning;
+		color:$white;
+
+		&:hover {
+			background-color:darken( $warning, 10% );
+		}//hover
+	}//warning
 
 	&.danger {
-		&:hover {}//hover
-	}//secondary
+		background-color: $danger;
+    border-color: $danger;
+		color:$white;
 
-	&.proceed {
-		&:hover {}//hover
-	}//secondary
+		&:hover {
+			background-color:darken( $danger, 10% );
+		}//hover
+	}//dnager
+
+	&.yellow {
+		background-color: $yellow;
+		border-color: $yellow;
+		color:$white;
+
+		&:hover {
+			background-color:darken( $yellow, 15% );
+		}//hover
+	}//warning
+
+
+	&.purple {
+		background-color: $purple;
+		border-color: $purple;
+		color:$white;
+
+		&:hover {
+			background-color:darken( $purple, 10% );
+		}//hover
+	}//warning
+
+	&.pink {
+		background-color: $pink;
+		border-color: $pink;
+		color:$white;
+
+		&:hover {
+			background-color:darken( $pink, 15% );
+		}//hover
+	}//warning
+
 }//buttons

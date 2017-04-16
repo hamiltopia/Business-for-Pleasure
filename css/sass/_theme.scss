@@ -1,3 +1,46 @@
+/* ---------- *\
+	MEDIA QUERIES
+\* ---------- */
+
+$screen-xs:   480px !default;   //Mobile
+$screen-sm:   800px !default;   //Tablet
+$screen-md:   1000px !default;   //Desktop
+$screen-lg:   1400px !default;  //HD Desktop
+// @media (min-width: $screen-xs) { ... }
+// @media (min-width: $screen-sm) { ... }
+// @media (min-width: $screen-md) { ... }
+// @media (min-width: $screen-lg) { ... }
+
+
+
+
+/* ---------- *\
+	COLORS
+\* ---------- */
+$primary:     #446CB3;    //Blue
+$success:     #26A65B;    //Green
+$info:        #6BB9F0;    //Light Blue
+$warning:     #F89406;    //Orange
+$danger:      #D91E18;    //Red
+
+$yellow:      #F4D03F;    //Red
+$purple:      #663399;    //Red
+$pink:        #D2527F;    //Red
+
+$text:        #333333;    //Text is not Black
+
+$link:        darken( $primary, 0% );
+$link-hover:  lighten( $primary, 20% );
+
+$white:       #FFFFFF;
+$black:       #000000;
+$greydk:      lighten( $black, 20% );
+$grey:        lighten( $black, 50% );
+$greylt:      lighten( $black, 90% );
+
+
+
+
 
 
 /* ---------- *\
@@ -54,59 +97,3 @@
     }//li
   }//menu
 }//navigation
-
-
-
-/* ---------- *\
-	BUTTONS
-\* ---------- */
-
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-		background-color: $white;
-    border-color: $black-two;
-		color:$link;
-
-	&:hover {
-		background-color: $link;
-    border-color: $link;
-		color:$white;
-	}
-
-	&.secondary {
-		background-color: $link;
-    border-color: $link;
-		color:$white;
-
-		&:hover {
-			background-color: $link-hover;
-			border-color:$link-hover;
-		}//hover
-	}//secondary
-
-	&.danger {
-		background-color: $red;
-    border-color: $red;
-		color:$white;
-
-		&:hover {
-			background-color: darken( $red, 10% );
-			border-color: darken( $red, 10% );
-		}//hover
-	}//danger
-
-	&.proceed {
-		background-color: $green;
-    border-color: $green;
-		color:$white;
-
-		&:hover {
-			background-color: darken( $green, 10% );
-			border-color: darken( $green, 10% );
-		}//hover
-	}//proceed
-
-}//buttons
