@@ -3,4 +3,4 @@
 ## The second largest heading
 ###### The smallest heading
 
-A Front End Framework by Hamiltopia
+## A Front End Framework by Hamiltopia
