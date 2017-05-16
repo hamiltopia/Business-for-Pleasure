@@ -1,3 +1,617 @@
 # Business-for-Pleasure
 
-<h1>Readme</h1>
+<!doctype html>
+
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+
+			<title>Business For Pleasure</title>
+			<meta name="description" content="Business For Pleasure">
+			<meta name="author" content="BitW">
+
+			<!-- Font Awesome --><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"></link>
+			<!-- Custom Styles --><link rel="stylesheet" href="css/stylesheets/screen.css">
+
+			<!--[if lt IE 9]>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+			<![endif]-->
+		</head>
+
+		<body>
+
+			<header id="head" class="container-fluid">
+				<div class="container">
+
+					<h1 class="branding" title="Business For Pleasure">
+						<a href="index.html" class="branding-link" title="Business For Pleasure">
+							<img src="imgs/logo.svg" title="Business For Pleasure" at="Business For Pleasure" class="logo">
+							<strong>Business For Pleasure</strong>
+						</a>
+					</h1>
+
+					<nav class="navigation">
+						<ul class="menu">
+							<li><a href="cards.html" title="Link">Cards</a></li>
+							<li>
+								<a href="#" title="Link" class="">Link <i class="fa fa-plus" aria-hidden="true"></i></a>
+								<ul>
+									<li><a href="#" title="Link">Link</a></li>
+									<li>
+										<a href="#" title="Link">Link <i class="fa fa-plus" aria-hidden="true"></i></a>
+										<ul>
+											<li><a href="#" title="Link">Link</a></li>
+											<li>
+												<a href="#" title="Link">Link <i class="fa fa-plus" aria-hidden="true"></i></a>
+												<ul>
+													<li><a href="#" title="Link">Link</a></li>
+													<li><a href="#" title="Link">Link</a></li>
+													<li><a href="#" title="Link">Link</a></li>
+													<li><a href="#" title="Link">Link</a></li>
+												</ul>
+											</li>
+											<li><a href="#" title="Link">Link</a></li>
+											<li><a href="#" title="Link">Link</a></li>
+										</ul>
+									</li>
+									<li><a href="#" title="Link">Link</a></li>
+									<li><a href="#" title="Link">Link</a></li>
+								</ul>
+							</li>
+							<li><a href="fullwidth.html" title="Link">Full Width</a></li>
+							<li><a href="#" title="Link">Link</a></li>
+						</ul>
+					</nav>
+
+					<button class="mobile-button">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+						<i class="fa fa-times" aria-hidden="true"></i>
+					</button>
+
+				</div><!-- container -->
+			</header><!-- container-fluid -->
+
+
+
+			<div id="grid" class="container-fluid">
+				<div class="container">
+
+					<h3 class="heading">Grid</h3>
+
+					<div class="row">
+						<div class="col-25 demo">col-25</div><!-- col-25 -->
+						<div class="col-25 demo">col-25</div><!-- col-25 -->
+						<div class="col-25 demo">col-25</div><!-- col-25 -->
+						<div class="col-25 demo">col-25</div><!-- col-25 -->
+					</div><!-- row -->
+
+					<div class="row"><!-- -->
+						<div class="col-50 demo">col-50</div><!-- col-50 -->
+						<div class="col-50 demo">col-50</div><!-- col-50 -->
+					</div><!-- row -->
+
+					<div class="row"><!-- -->
+						<div class="col-75 demo">col-75</div><!-- col-75 -->
+						<div class="col-25 demo">col-25</div><!-- col-25 -->
+					</div><!-- row -->
+
+					<div class="row"><!-- -->
+						<div class="col-33 demo">col-33</div><!-- col-33 -->
+						<div class="col-33 demo">col-33</div><!-- col-33 -->
+						<div class="col-33 demo">col-33</div><!-- col-33 -->
+					</div><!-- row -->
+
+					<div class="row"><!-- -->
+						<div class="col-66 demo">col-66</div><!-- col-66 -->
+						<div class="col-33 demo">col-33</div><!-- col-33 -->
+					</div><!-- row -->
+
+					<div class="row"><!-- -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+					</div><!-- row -->
+					<div class="row"><!-- -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-80 demo">col-80</div><!-- col-20 -->
+					</div><!-- row -->
+					<div class="row"><!-- -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-60 demo">col-60</div><!-- col-20 -->
+					</div><!-- row -->
+					<div class="row"><!-- -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-40 demo">col-60</div><!-- col-20 -->
+					</div><!-- row -->
+
+					<div class="row"><!-- -->
+						<div class="col-30 demo">col-30</div><!-- col-30 -->
+						<div class="col-70 demo">col-70</div><!-- col-70 -->
+					</div><!-- row -->
+
+				</div><!-- container -->
+				<div class="container">
+
+					<h3 class="heading">Grid Offset</h3>
+
+					<div class="row">
+						<div class="col-25 demo">col-25</div><!-- col-25 -->
+						<div class="col-25 demo">col-25</div><!-- col-25 -->
+						<div class="col-25 demo">col-25</div><!-- col-25 -->
+						<div class="col-25 demo">col-25</div><!-- col-25 -->
+					</div><!-- row -->
+
+					<div class="row">
+						<div class="col-25 offset-25 demo">col-25 offset-25</div><!-- col-25 -->
+						<div class="col-25 demo">col-25</div><!-- col-25 -->
+						<div class="col-25 demo">col-25</div><!-- col-25 -->
+					</div><!-- row -->
+					<div class="row">
+						<div class="col-50 offset-50 demo">col-50 offset-50</div><!-- col-25 -->
+					</div><!-- row -->
+					<div class="row">
+						<div class="col-25 offset-75 demo">col-25 offset-75</div><!-- col-25 -->
+					</div><!-- row -->
+
+					<div class="row"><!-- -->
+						<div class="col-33 demo">col-33</div><!-- col-33 -->
+						<div class="col-33 demo">col-33</div><!-- col-33 -->
+						<div class="col-33 demo">col-33</div><!-- col-33 -->
+					</div><!-- row -->
+					<div class="row">
+						<div class="col-66 offset-33 demo">col-66 offset-33</div><!-- col-25 -->
+					</div><!-- row -->
+					<div class="row">
+						<div class="col-33 offset-33 demo">col-33 offset-33</div><!-- col-25 -->
+						<div class="col-33 demo">col-33</div><!-- col-25 -->
+					</div><!-- row -->
+					<div class="row">
+						<div class="col-33 offset-66 demo">col-33 offset-66</div><!-- col-25 -->
+					</div><!-- row -->
+
+
+
+					<div class="row"><!-- -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+					</div><!-- row -->
+					<div class="row"><!-- -->
+						<div class="col-20 offset-20 demo">col-20 offset-20</div><!-- col-20 -->
+						<div class="col-40 demo">col-40</div><!-- col-40 -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+					</div><!-- row -->
+					<div class="row"><!-- -->
+						<div class="col-60 offset-40 demo">col-60 offset-40</div><!-- col-60 -->
+					</div><!-- row -->
+					<div class="row"><!-- -->
+						<div class="col-20 offset-60 demo">col-20 offset-60</div><!-- col-20 -->
+						<div class="col-20 demo">col-20</div><!-- col-20 -->
+					</div><!-- row -->
+					<div class="row"><!-- -->
+						<div class="col-20 offset-80 demo">col-20 offset-80</div><!-- col-20 -->
+					</div><!-- row -->
+
+				</div><!-- container -->
+			</div><!-- container-fluid -->
+
+
+			<div id="palette" class="container-fluid">
+				<div class="container">
+
+					<h3 class="heading">Palette</h3>
+
+					<div class="row"><!-- -->
+						<div class="col-75">
+
+							<div class="swatch primary">Blue</div>
+							<div class="swatch secondary">Secondary</div>
+							<div class="swatch info">Blue Light</div>
+							<div class="swatch success">Green</div>
+							<div class="swatch warning">Orange</div>
+							<div class="swatch danger">Red</div>
+
+							<div class="swatch yellow">Yellow</div>
+							<div class="swatch purple">Purple</div>
+							<div class="swatch pink">Pink</div>
+
+							<div class="swatch black">Black</div>
+							<div class="swatch greydk">Grey Dark</div>
+							<div class="swatch grey">Grey</div>
+
+							<div class="swatch greylt">Grey Light</div>
+							<div class="swatch white">White</div>
+
+
+
+						</div><!-- col-75 -->
+						<div class="col-25">
+
+							<button type="button" class="primary">Button</button>
+							<a role="button" class="button primary">Link Button</a><br>
+							<button type="button" class="secondary">Button</button>
+							<a role="button" class="button secondary">Link Button</a><br>
+							<button type="button" class="info">Button</button>
+							<a role="button" class="button info">Link Button</a><br>
+							<button type="button" class="success">Button</button>
+							<a role="button" class="button success">Link Button</a><br>
+							<button type="button" class="warning">Button</button>
+							<a role="button" class="button warning">Link Button</a><br>
+							<button type="button" class="danger">Button</button>
+							<a role="button" class="button danger">Link Button</a><br>
+							<button type="button" class="yellow">Button</button>
+							<a role="button" class="button yellow">Link Button</a><br>
+							<button type="button" class="purple">Button</button>
+							<a role="button" class="button purple">Link Button</a><br>
+							<button type="button" class="pink">Button</button>
+							<a role="button" class="button pink">Link Button</a><br>
+
+
+						</div><!-- col-25 -->
+					</div><!-- row -->
+
+				</div><!-- container -->
+			</div><!-- container-fluid -->
+
+
+				<br><br>
+
+
+
+			<div id="type" class="container-fluid">
+				<div class="container">
+
+					<h3 class="heading">Typography</h3>
+
+					<div class="row"><!-- -->
+						<div class="col-75">
+
+							<h1>Heading One</h1>
+							<h2>Heading Two</h2>
+							<h3>Heading Three</h3>
+							<h4>Heading Four</h4>
+							<h5>Heading Five</h5>
+							<h6>Heading Six</h6>
+							<p>Paragraph <strong>Bold</strong> <em>Italic</em> enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+
+							<p>Paragraph <a href="#">Link!</a> <em>Italic</em> enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+
+							<p class="text-primary">Paragraph Primary ad minima veniam, quis nostrum.</p>
+							<p class="text-secondary">Paragraph Secondary ad minima veniam, quis nostrum.</p>
+							<p class="text-info">Paragraph Info ad minima veniam, quis nostrum.</p>
+							<p class="text-success">Paragraph Success ad minima veniam, quis nostrum.</p>
+							<p class="text-warning">Paragraph Warning ad minima veniam, quis nostrum.</p>
+							<p class="text-danger">Paragraph Danger ad minima veniam, quis nostrum.</p>
+							<p class="text-yellow">Paragraph Yellow ad minima veniam, quis nostrum.</p>
+							<p class="text-purple">Paragraph Purple ad minima veniam, quis nostrum.</p>
+							<p class="text-pink">Paragraph Pink ad minima veniam, quis nostrum.</p>
+
+
+
+
+						</div><!-- col-75 -->
+						<div class="col-25">
+
+							<h4>Accordion</h4>
+
+							<h5 class="ac-handle">Handle One <i class="fa fa-plus" aria-hidden="true"></i></h5>
+							<div class="ac-drawer"><p>Drawer One. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div>
+
+							<h5 class="ac-handle">Handle Two <i class="fa fa-plus" aria-hidden="true"></i></h5>
+							<div class="ac-drawer"><p>Drawer Two. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p></div>
+
+							<h5 class="ac-handle">Handle Three <i class="fa fa-plus" aria-hidden="true"></i></h5>
+							<div class="ac-drawer"><p>Drawer Three. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.</p></div>
+
+						</div><!-- col-25 -->
+					</div><!-- row -->
+
+				</div><!-- container -->
+			</div><!-- container-fluid -->
+
+
+				<br><br>
+
+
+			<div id="form" class="container-fluid">
+				<div class="container">
+
+					<h3 class="heading">Form</h3>
+
+					<div class="row"><!-- -->
+						<div class="col-75">
+
+							<p>Paragraph <a href="#">Link!</a> <em>Italic</em> enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+
+							<!-- form -->
+							<form>
+
+								<div class="form-group">
+									<label for="text-input-one">Field Label</label>
+									<input type="text" id="text-input-one" placeholder="Enter Some Text">
+									<small>This is some instructional text.</small>
+								</div><!-- form group -->
+
+								<div class="form-group success">
+									<label for="text-input-one">Field Label <strong>*</strong></label>
+									<input type="text" id="text-input-one" value="Yeah!">
+									<small>Success.</small>
+								</div><!-- form group -->
+
+								<div class="form-group error">
+									<label for="text-input-one">Field Label <strong>*</strong></label>
+									<input type="text" id="text-input-one" value="Meh">
+									<small>ERROR.</small>
+								</div><!-- form group -->
+
+								<div class="form-group">
+									<label for="exampleInputEmail1">Email address</label>
+									<input type="email" id="exampleInputEmail1" placeholder="Enter email">
+									<small>We'll never share your email with anyone else.</small>
+								</div><!-- form group -->
+
+								<div class="form-group">
+									<label for="exampleInputPassword1">Password</label>
+									<input type="password" id="exampleInputPassword1" placeholder="Password">
+									<small>Please include a Capital letter and a Number.</small>
+
+								</div><!-- form group -->
+
+								<div class="form-group">
+									<label for="exampleSelect1">Example select</label>
+									<select id="exampleSelect1">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div><!-- form group -->
+
+								<div class="form-group">
+									<label for="exampleTextarea">Example textarea</label>
+									<textarea id="exampleTextarea" placeholder="Enter Some Text" rows="5"></textarea>
+								</div><!-- form group -->
+
+								<div class="form-group check-radio">
+							    <label>
+							      <input type="checkbox"> Check me out
+							    </label>
+								</div><!-- form group -->
+
+								<div class="form-group check-radio">
+							    <label>
+							      <input type="radio"> Radio me out
+							    </label>
+								</div><!-- form group -->
+
+								<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+								<button type="button" class="primary">Confirm</button>
+								<button type="button" class="danger">Cancel</button>
+
+
+
+							<form><!-- form -->
+
+						</div><!-- col-75 -->
+						<div class="col-25">
+
+						</div><!-- col-25 -->
+					</div><!-- row -->
+
+				</div><!-- container -->
+			</div><!-- container-fluid -->
+
+
+			<br><br>
+
+
+			<div id="table" class="container-fluid">
+				<div class="container">
+
+					<h3 class="heading">Lists</h3>
+
+					<div class="row"><!-- -->
+						<div class="col-33">
+
+							<ul class="naked">
+		            <li>Naked lists have no basic styles</li>
+		            <li>
+		              They use the circle list style
+		              <ul>
+		                <li>Nested lists styled to feel right</li>
+		                <li>Can nest either type of list into the other</li>
+		              </ul>
+		            </li>
+		            <li>Just more list items mama san</li>
+		          </ul>
+
+						</div><!-- col-75 -->
+						<div class="col-33">
+
+							<ul>
+		            <li>Unordered lists have basic styles</li>
+		            <li>
+		              They use the circle list style
+		              <ul>
+		                <li>Nested lists styled to feel right</li>
+		                <li>Can nest either type of list into the other</li>
+		              </ul>
+		            </li>
+		            <li>Just more list items mama san</li>
+		          </ul>
+
+						</div><!-- col-75 -->
+						<div class="col-33">
+
+							<ol>
+		            <li>Ordered lists also have basic styles</li>
+		            <li>
+		              They use the decimal list style
+		              <ul>
+		                <li>Ordered and unordered can be nested</li>
+		                <li>Can nest either type of list into the other</li>
+		              </ul>
+		            </li>
+		            <li>Last list item just for the fun</li>
+		          </ol>
+
+
+						</div><!-- col-25 -->
+					</div><!-- row -->
+
+				</div><!-- container -->
+			</div><!-- container-fluid -->
+
+			<br><br><div id="table" class="container-fluid">
+				<div class="container">
+
+					<h3 class="heading">Table</h3>
+
+					<div class="row"><!-- -->
+						<div class="col-75">
+
+							<p>Paragraph <a href="#">Link!</a> <em>Italic</em> enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+
+							<table title="Table!" id="table-one">
+								<thead>
+									<tr>
+										<th>Head</th>
+										<th>Head</th>
+										<th>Head</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<td>Foot</td>
+										<td>Foot</td>
+										<td>Foot</td>
+									</tr>
+								</tfoot>
+								<tbody>
+									<tr>
+										<td>Body</td>
+										<td>Body</td>
+										<td>Body</td>
+									</tr>
+									<tr>
+										<td>Body</td>
+										<td>Body</td>
+										<td>Body</td>
+									</tr>
+									<tr>
+										<td>Body</td>
+										<td>Body</td>
+										<td>Body</td>
+									</tr>
+									<tr>
+										<td>Body</td>
+										<td>Body</td>
+										<td>Body</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<table class="stripped" title="Table!" id="table-two">
+								<thead>
+									<tr>
+										<th>Head</th>
+										<th>Head</th>
+										<th>Head</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<td>Foot</td>
+										<td>Foot</td>
+										<td>Foot</td>
+									</tr>
+								</tfoot>
+								<tbody>
+									<tr>
+										<td>Body</td>
+										<td>Body</td>
+										<td>Body</td>
+									</tr>
+									<tr>
+										<td>Body</td>
+										<td>Body</td>
+										<td>Body</td>
+									</tr>
+									<tr>
+										<td>Body</td>
+										<td>Body</td>
+										<td>Body</td>
+									</tr>
+									<tr>
+										<td>Body</td>
+										<td>Body</td>
+										<td>Body</td>
+									</tr>
+								</tbody>
+							</table>
+
+
+						</div><!-- col-75 -->
+						<div class="col-25">col-25</div><!-- col-25 -->
+					</div><!-- row -->
+
+				</div><!-- container -->
+			</div><!-- container-fluid -->
+
+			<br><br>
+
+
+			<div id="image" class="container-fluid">
+				<div class="container">
+
+					<h3 class="heading">Images</h3>
+
+					<div class="row"><!-- -->
+						<div class="col-75">
+
+							<p>Paragraph <a href="#">Link!</a> <em>Italic</em> enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+
+							<figure class="figure">
+							  <img src="https://unsplash.it/540/320?image=433" class="figure-img" alt="This is a Figure with a Caption" title="This is a Figure with a Caption">
+							  <figcaption class="figure-caption text-right text-muted">This is the Caption for this Figure</figcaption>
+							</figure>
+
+							<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+							<figure class="figure figure-left">
+							  <img src="https://unsplash.it/320/180?image=433" class="figure-img img-fluid rounded" alt="This is a Figure with a Caption" title="This is a Figure with a Caption">
+							  <figcaption class="figure-caption text-right text-muted">This is the Caption for this Figure</figcaption>
+							</figure>
+
+							<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+							<figure class="figure figure-right">
+							  <img src="https://unsplash.it/320/180?image=433" class="figure-img img-fluid rounded" alt="This is a Figure with a Caption" title="This is a Figure with a Caption">
+							  <figcaption class="figure-caption text-right text-muted">This is the Caption for this Figure</figcaption>
+							</figure>
+
+							<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+
+
+						</div><!-- col-75 -->
+						<div class="col-25">col-25</div><!-- col-25 -->
+					</div><!-- row -->
+
+				</div><!-- container -->
+			</div><!-- container-fluid -->
+
+			<!-- Javascript -->
+			<!-- jQuery --><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<!-- Custom --><script src="js/scripts.js"></script>
+		</body>
+	</html>
+						<!-- HTML Template Done -->
