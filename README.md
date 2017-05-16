@@ -1,6 +1,6 @@
 # Business for Pleasure
 
-A Front End Framework by Hamiltopia
+A front end framework by Hamiltopia
 
 
 # Project Title
