@@ -21,7 +21,6 @@
 
 			@media (min-width: $screen-sm) {
 				float:left;
-
 			}
 
 			&.col-25 {
@@ -53,6 +52,12 @@
 					width:66.6666%;
 				}//break
 			}//66
+
+			&.col-10 {
+				@media (min-width: $screen-sm) {
+					width:10%;
+				}//break
+			}//20
 
 			&.col-20 {
 				@media (min-width: $screen-sm) {
@@ -90,6 +95,18 @@
 				}//break
 			}//80
 
+			&.col-90 {
+				@media (min-width: $screen-sm) {
+					width:90%;
+				}//break
+			}//90
+
+			&.col-100 {
+				@media (min-width: $screen-sm) {
+					width:100%;
+				}//break
+			}//100
+
 
 
 			// ---------
@@ -125,6 +142,12 @@
 					margin-left:66.6666%;
 				}//break
 			}//Offset 75
+
+			&.offset-10 {
+				@media (min-width: $screen-sm) {
+					margin-left:10%;
+				}//break
+			}//Offset 10
 
 			&.offset-20 {
 				@media (min-width: $screen-sm) {

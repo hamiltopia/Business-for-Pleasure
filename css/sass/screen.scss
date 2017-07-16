@@ -42,7 +42,7 @@ img {
     @media (min-width: $screen-sm) {
       float:left;
       margin:0 2rem 1rem 0;
-      width:50%;
+      width:45%;
     }//break
   }//float-left
 
@@ -54,10 +54,11 @@ img {
     @media (min-width: $screen-sm) {
       float:right;
       margin:0 0 1rem 2rem;
-      width:50%;
+      width:45%;
 
-      .figure-img {
-      }//img
+      .figure-caption {
+				text-align:left;
+      }//figure-caption
     }//break
   }//float-left
 
@@ -146,49 +147,48 @@ img {
 		//primary
 		&.primary {
 			&:before {
-				background-color:$blue;
-				border-color:$blue;
+				background-color:$primary;
+				border-color:$primary;
 			}//before
 		}//primary
 
 		//secondary
 		&.secondary {
 			&:before {
-				background-color:$white;
-				border-color:$blue;
-				color:$blue
+				background-color:$secondary;
+				border-color:$secondary;
 			}//before
 		}//secondary
 
 		//success
 		&.success {
 			&:before {
-				background-color:$green;
-				border-color:$green;
+				background-color:$success;
+				border-color:$success;
 			}//before
 		}//success
 
 		//info
 		&.info {
 			&:before {
-				background-color:$bluelt;
-				border-color:$bluelt;
+				background-color:$info;
+				border-color:$info;
 			}//before
 		}//info
 
 		//warning
 		&.warning {
 			&:before {
-				background-color:$orange;
-				border-color:$orange;
+				background-color:$warning;
+				border-color:$warning;
 			}//before
 		}//warning
 
 		//danger
 		&.danger {
 			&:before {
-				background-color:$red;
-				border-color:$red;
+				background-color:$danger;
+				border-color:$danger;
 			}//before
 		}//danger
 
@@ -251,3 +251,50 @@ img {
 
 	}//swatch
 }//palette
+
+
+/* ---------- *\
+	HIDE THAT SHIT
+\* ---------- */
+// Hidden Small Down
+.hidden-sm-down {
+	@media (min-width: $screen-sm) {
+		display: none;
+	}//sm break
+
+	@media (min-width: $screen-md) {
+		display: block;
+	}//md break
+}//hidden-sm-down
+
+
+// Hidden Medium Down
+.hidden-md-down {
+	@media (min-width: $screen-md) {
+		display: none;
+	}//md break
+
+	@media (min-width: $screen-lg) {
+		display: block;
+	}//lg break
+}//hidden-md-down
+
+
+// Hidden Large Down
+.hidden-lg-down {
+	@media (min-width: $screen-sm) {
+		display: none;
+	}//sm break
+
+	@media (min-width: $screen-md) {
+		display: none;
+	}//md break
+
+	@media (min-width: $screen-lg) {
+		display: none;
+	}//lg break
+
+	@media (max-width: $screen-lg) {
+		display: block;
+	}//lg break
+}//hidden-lg-down

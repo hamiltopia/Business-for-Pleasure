@@ -4,57 +4,121 @@
 
 .card {
 	@extend .clearfix;
+	@include border-radius(3px);
 
-	@media (min-width: $screen-md) {
-	}//break
-
+	border:1px solid $greylt;
 
 	a {
 		text-decoration:none;
 
-		img {
-			height:auto;
+		.card-image {
+			display:block;
+			position:relative;
 			width:100%;
 
-			@media (min-width: $screen-xs) {
-				float:left;
-				margin:0 1.5rem 0 0;
-				width:40%;
-			}//break
-		}//img
+			// @media (min-width: $screen-md) {
+			// 	float:left;
+			// 	margin:0 1rem 0 0;
+			// 	width:40%;
+			// }//break
+
+			span {
+				@include border-radius(3px);
+				display:block;
+				overflow: hidden;
+				padding:0 0 56.25% 0;
+				position:relative;
+				width:100%;
+
+				img {
+					transition: all 4s ease-in-out;
+					position:absolute;
+					top:0;
+					left:0;
+					z-index:1;
+
+					height:auto;
+					width:100%;
+				}//img
+			}//span
+
+		}//card-image
 
 		.card-content {
 			display:block;
 			overflow:hidden;
+			padding: .5rem 1rem 1rem;
 
 			.card-title {
+				transition: all .4s;
 				display:inline-block;
-				font:normal bold 1.6rem/1.6rem $open-sans-con;
+				color:$greydk;
+				font:normal 600 1.4rem/1.6rem $open-sans;
+				padding: .5rem 0;
 			}//card-title
 
-			.card-author {
+			.card-meta {
 				color:$greydk;
 				display:block;
-				font-size:.9rem;
-				font-weight:bold;
-				line-height:1.4rem;
-			}//card-author
-
-			.card-meta {
-				color:$grey;
-				display:block;
-				font: normal bold .8rem/1.8rem $open-sans;
+				font: normal 600 .8rem/1.4rem $open-sans;
 				text-transform:uppercase;
 			}//card-title
 
 			.card-text {
 				color:$greydk;
 				display:block;
-				font: normal normal .9rem/1.4rem $open-sans;
+				font: normal normal .9rem/1.2rem $open-sans;
 			}//card-title
 		}//card-content
+
+		&:hover {
+			.card-image {
+				img {
+					transform: scale(1.1);
+				}//img
+			}//card-image
+
+			.card-content {
+				.card-title {
+					color:$primary;
+				}//card-title
+			}//card-content
+		}//hover
 	}//href
+
+	/* ---------- *\
+		PROFILE COLUMN
+	\* ---------- */
+	.card-profile {
+		@extend .clearfix;
+		background-color:$greylt;
+		display:block;
+		padding:1rem;
+
+		.card-profile-avatar {
+			@include border-radius(50%);
+			float:left;
+			margin:0 .5rem 0 0;
+			width:3.6rem;
+		}//card-profile-avatar
+
+		.card-profile-user {
+			display:block;
+			font: normal 600 .9rem/1rem $open-sans;
+			overflow:hidden;
+		}//card-profile-user
+
+		.card-profile-meta {
+			color:$grey;
+			display:block;
+			font: normal 500 .8rem/1.6rem $open-sans;
+			overflow:hidden;
+		}//card-profile-meta
+
+	}//card-profile
 }//card
+
+
 
 /* ---------- *\
 	CARD in ASIDE
@@ -64,16 +128,14 @@
 	.card {
 
 		a {
-			img {
-				height:auto;
-				margin-bottom:.5rem;
-				width:100%;
-
+			.card-image {
 				@media (min-width: $screen-xs) {
 					float:none;
+					margin:0 0 1rem 0;
 					width:100%;
 				}//break
-			}//img
+			}//href
+
 
 			.card-content {
 				.card-title {
@@ -83,12 +145,10 @@
 
 				.card-author {
 					font-size:.8rem;
-					line-height:1.4rem;
 				}//card-author
 
 				.card-meta {
 					font-size:.8rem;
-					line-height:1.8rem;
 				}//card-title
 
 				.card-text {
